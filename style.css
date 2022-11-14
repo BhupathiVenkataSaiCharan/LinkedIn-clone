@@ -242,15 +242,20 @@ a{
 .sidebar-activity a{
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
-    color: #888;
-    margin: 3px 0;
+    color: #045be6;
+    margin: 10px 0;
 }
 
 .sidebar-activity a img{
     width: 20px;
     margin-right: 10px;
+}
+
+.sidebar-activity a span{
+    position: relative;
+    margin-left: 250px;
 }
 
 
