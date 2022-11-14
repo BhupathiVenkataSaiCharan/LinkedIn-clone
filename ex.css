@@ -1,0 +1,37 @@
+.navbar-center ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar-center ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;
+    position: relative;
+    flex-direction: column;
+}
+
+.navbar-center ul span{
+    font-size: 15px;
+}
+
+/*span tag change side to bottom for .navbar-center ul li a span*/
+
+.navbar-center ul li a img{
+    width: 30px;
+}
+
+.navbar-center ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #045be6;
+    position: absolute;
+    bottom: -14px;
+    transition: width 0.3s;
+}
+.navbar-center ul li a:hover::after,
+.navbar-center ul li a.active-link::after{
+    width: 100%;
+}

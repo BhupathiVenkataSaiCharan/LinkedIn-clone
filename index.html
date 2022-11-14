@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked In</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li>
+                    <a href="#" class="active-link">
+                        <img src="images/home.png">
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/network.png">
+                        <div>My Network</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/jobs.png">
+                        <div>Jobs</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/message.png">
+                        <div>Messaging</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/notification.png">
+                        <div>Notifications</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                        <div class="profile">Me <img src="images/down-arrow.png" class="down-arrow"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <!-- <div class="online"> -->
+                <!-- <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()"> -->
+            </div>
+        </div>
+
+        <!-- ----------------------------profile-dropdown----------------------------------- -->
+
+        <!-- <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()"> -->
+
+        <div class="profile-menu-wrap" id="subMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>James Sheldon</h3>
+                        <p>Full-stack Developer at Bizwy</p>
+                        <a href="profile.html">View Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+<!-- -----------------------------------navbar end-------------------------------------- -->
+
+    <div class="container">
+        <!-- ------------left sidebar--------------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.png">
+                    <h1>James sheldon</h1>
+                    <h3>Web Designer at Microsoft</h3>
+                    <ul>
+                        <li>Your connections<span>89</span></li>
+                        <li>Your profile views<span>3</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/premium.png">Try Premium for free</a>
+                    <a href="#"><img src="images/items.png">My items</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity">
+                <!-- <h3>Recent</h3> -->
+                <a href="#"><img src="images/recent.png">Groups</a>
+                <a href="#"><img src="images/recent.png">Events</a>
+                <a href="#"><img src="images/recent.png">Followed Hashtags</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- ------------main content--------------- -->
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/user-1.png">
+                    <textarea rows="2" placeholder="Start a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png">Photo</li>
+                    <li><img src="images/video.png">video</li>
+                    <li><img src="images/event.png">Event</li>
+                    <li><img src="images/event.png">Write article</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h1>Lawrence Smith jones</h1>
+                        <small>Freelancer looking for amost challenging project</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>
+                    Join our global AR developer conference to 
+                    learn how to build and monetize AR experiences 
+                    for fashion, gaming, education, fitness, and beyond.
+                </p>
+                <img src="images/post-image-2.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinesh and 325 other</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <!-- <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div> -->
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO of Micromarks</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>
+                    Join our global AR developer conference to 
+                    learn how to build and monetize AR experiences 
+                    for fashion, gaming, education, fitness, and beyond.
+                </p>
+                <img src="images/post-image-3.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinesh and 325 other</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <!-- <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div> -->
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO of Micromarks</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>
+                    Join our global AR developer conference to 
+                    learn how to build and monetize AR experiences 
+                    for fashion, gaming, education, fitness, and beyond.
+                </p>
+                <img src="images/post-image-4.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinesh and 325 other</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <!-- <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div> -->
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO of Micromarks</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>
+                    Join our global AR developer conference to 
+                    learn how to build and monetize AR experiences 
+                    for fashion, gaming, education, fitness, and beyond.
+                </p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinesh and 325 other</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <!-- <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div> -->
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <!-- ------------right sidebar--------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h3>LinkedIn News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>12h ago &middot; 10,934 readers</span>
+
+                <a href="#">Cities and current changing conditions</a>
+                <span>1d ago &middot; 14,334 readers</span>
+
+                <a href="#">LinkedIn's top voices green India</a>
+                <span>4d ago &middot; 11,534 readers</span>
+
+                <a href="#">Carrers growing horizontally too</a>
+                <span>4d ago &middot; 17,134 readers</span>
+
+                <a href="#">More hiring = Greater confidence</a>
+                <span>10d ago &middot; 12,934 readers</span>
+
+                <a href="#" class="read-more-link">Show more ></a>
+
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot; </small>
+                <p>Get the latest on jobs, news, and more</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Sai, you might like to follow Xiaomi</b>
+                <a href="#" class="ad-link">Follow</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help center</a>
+                <a href="#">Privacy and Terms ></a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business Services</a>
+                <a href="#">Get the LinkeIn App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <h3>Linked</h3>
+                    <img src="images/logo.png">
+                    <p>LinkedIn Corporation © 2022</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+
+        let subMenu = document.getElementById("subMenu");
+    
+        function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+        }
+
+        </script>
+    
+
+</body>
+</html>
